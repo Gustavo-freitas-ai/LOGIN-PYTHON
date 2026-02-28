@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(222, 229, 243);
+    font-family: "Raleway", sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 360px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.login{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+
+.login h2 {
+    font-size: 30px;
+    color: rgb(2, 0, 78);
+}
+
+.login input {
+    border: 3px solid rgba(60, 107, 235, 0.89);
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.login input::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+}
+.password{
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+
+.password h2 {
+    font-size: 30px;
+    color: rgb(2, 0, 78);
+}
+
+.password input {
+    border: 3px solid rgba(60, 107, 235, 0.89);
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.password input::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    background-color: rgba(24, 53, 182, 0.897);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(222, 229, 243);
+}
