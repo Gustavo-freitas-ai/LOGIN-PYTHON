@@ -70,7 +70,12 @@ form {
     font-weight: 600;
 }
 
-form button{
+.login-button{
+    display: flex;
+    gap: 98px;
+}
+
+.button-enter{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,4 +87,28 @@ form button{
     font-weight: bold;
     cursor: pointer;
     color: rgb(222, 229, 243);
+}
+
+.button-enter:hover{
+    background-color: rgb(19, 58, 233);
+    color: black;
+}
+
+.button-register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    background-color: rgba(24, 53, 182, 0.897);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(222, 229, 243);
+}
+
+.button-register:hover{
+    background-color: rgb(19, 58, 233);
+    color: black;
 }

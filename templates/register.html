@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+    <link rel="stylesheet"href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<main>
+    <form method="POST">
+
+        <div class="login">
+            <h2>Novo Usuário</h2>
+            <input type="text" name="user" placeholder="Digite seu usuário" required>
+        </div>
+
+        <div class="password">
+            <h2>Senha</h2>
+            <input type="password"name="password"placeholder="Digite sua senha"required>
+        </div>
+        <div class="login-button">
+            <button class="button-enter" type="submit">Registrar</button>
+        </div>
+        <p>Já possui conta?<a href="/">Fazer Login</a></p>
+    </form>
+</main>
+
+</body>
+</html>

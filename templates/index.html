@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet"href="{{ url_for('static', filename='style.css') }}">
     <title>Login</title>
 </head>
 <body>
@@ -11,14 +11,17 @@
     <main>
         <form method="POST">
             <div class="login">
-                <h2>User</h2>
-                <input type="text" name="user" placeholder=" Digite o seu user" required>
+                <h2>Usuário</h2>
+                <input type="text" name="user" placeholder="Digite seu usuário" required>
             </div>
             <div class="password">
-                <h2>Password</h2>
-                <input type="password" name="password" placeholder=" Digite a sua senha" required>        
+                <h2>Senha</h2>
+                <input type="password" name="password" placeholder="Digite sua senha" required>        
             </div>
-            <button type="submit">Entrar</button>
+            <div class="login-button">
+                <button name="action" value="login" type="submit" class="button-enter">Entrar</button>
+                <a href="/register"><button type="button"class="button-register">Registrar-se</button></a>
+            </div>
         </form>
     </main>
 
